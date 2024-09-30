@@ -95,6 +95,7 @@ public function handshake(Request $request)
                     $q['status3'] = $this->validateAndFormatInteger($data[4] ?? null);
                     $q['status4'] = $this->validateAndFormatInteger($data[5] ?? null);
                     $q['status5'] = $this->validateAndFormatInteger($data[6] ?? null);
+                    $q['final_status'] = 'fetched';
                     $q['created_at'] = now();
                     $q['updated_at'] = now();
                     //dd($q);

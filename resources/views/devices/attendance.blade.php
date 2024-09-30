@@ -38,7 +38,7 @@
                         <td>{{ $attendance->status3 }}</td>
                         <td>{{ $attendance->status4 }}</td>
                         <td>{{ $attendance->status5 }}</td>
-
+                        <td>{{ $attendance->final_status }}</td>
                     </tr>
                 @endforeach
             </tbody>

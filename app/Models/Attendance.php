@@ -17,6 +17,7 @@ class Attendance extends Model
         'status3',
         'status4',
         'status5',
+        'final_status',
     ];
 
     protected $casts = [
@@ -26,5 +27,6 @@ class Attendance extends Model
         'status3' => 'boolean',
         'status4' => 'boolean',
         'status5' => 'boolean',
+        'final_status' => 'string',
     ];
 }
