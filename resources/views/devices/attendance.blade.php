@@ -23,6 +23,7 @@
                     <th>Status 3</th>
                     <th>Status 4</th>
                     <th>Status 5</th>
+                    <th>Final Status</th>
                     
                 </tr>
             </thead>
