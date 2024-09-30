@@ -34,5 +34,5 @@ Route::get('/iclock/getrequest', [iclockController::class, 'getrequest']);
 
 
 Route::get('/', function () {
-    return redirect('devices') ;
+    return redirect('devices');
 });
