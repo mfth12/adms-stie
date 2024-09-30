@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-     Schema::create('attendances', function (Blueprint $table) {
+        Schema::create('attendances', function (Blueprint $table) {
             $table->id();
             $table->string('sn');
             $table->string('table');
@@ -23,6 +23,7 @@ return new class extends Migration
             $table->boolean('status3')->nullable();
             $table->boolean('status4')->nullable();
             $table->boolean('status5')->nullable();
+            $table->boolean('final_status')->nullable();
             $table->timestamps();
         });
     }
