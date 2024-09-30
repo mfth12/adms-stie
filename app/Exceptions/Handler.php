@@ -31,7 +31,7 @@ class Handler extends ExceptionHandler
 
         $this->renderable(function (NotFoundHttpException $e, $request) {
             $requestData = $request->all();
-            
+
             // Remove sensitive information
             foreach ($this->dontFlash as $key) {
                 unset($requestData[$key]);

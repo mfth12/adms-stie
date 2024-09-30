@@ -45,4 +45,3 @@ class JadwalSholatSeeder extends Seeder
         DB::table('jadwal_sholat')->insert($data);
     }
 }
-
