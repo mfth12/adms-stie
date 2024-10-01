@@ -23,7 +23,7 @@ return new class extends Migration
             $table->boolean('status3')->nullable();
             $table->boolean('status4')->nullable();
             $table->boolean('status5')->nullable();
-            $table->boolean('final_status')->nullable();
+            $table->string('final_status')->nullable();
             $table->timestamps();
         });
     }
