@@ -14,7 +14,12 @@ class DeviceController extends Controller
     public function index(Request $request)
     {
         $data['lable'] = "Devices";
-        $data['log'] = DB::table('devices')->select('id', 'no_sn', 'online')->orderBy('online', 'DESC')->get();
+        // $data['log'] = DB::table('devices')->select('id', 'no_sn', 'online')->orderBy('online', 'DESC')->get();
+        // Mengonversi field online ke GMT+7
+        $data['log'] = DB::table('devices')
+            ->select('id', 'no_sn', DB::raw("CONVERT_TZ(online, '+00:00', '+07:00') as online"))
+            ->orderBy('online', 'DESC')
+            ->get();
         return view('devices.index', $data);
     }
 
